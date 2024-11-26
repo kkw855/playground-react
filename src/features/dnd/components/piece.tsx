@@ -2,7 +2,7 @@ import { draggable } from '@atlaskit/pragmatic-drag-and-drop/element/adapter'
 import { useEffect, useRef, useState } from 'react'
 import invariant from 'tiny-invariant'
 
-import { cn } from '@/lib/cn'
+import { cn } from '@/utils/cn'
 
 import type { Coord, PieceType } from '../types'
 

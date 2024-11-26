@@ -12,6 +12,20 @@ const createAppRouter = () =>
         },
       },
       {
+        path: '/rhf',
+        lazy: async () => {
+          const { NestedArrayRoute } = await import('./routes/rhf/nested-array')
+          return { Component: NestedArrayRoute }
+        },
+      },
+      {
+        path: '/schema',
+        lazy: async () => {
+          const { SchemaRoute } = await import('./routes/effect/schema/schema')
+          return { Component: SchemaRoute }
+        },
+      },
+      {
         path: '/dnd',
         lazy: async () => {
           const { DndRoute } = await import('./routes/dnd/dnd')
@@ -35,5 +49,7 @@ export const AppRouter = () => {
     return createAppRouter()
   }, [])
 
-  return <RouterProvider router={router} />
+  return (
+    <RouterProvider router={router} future={{ v7_startTransition: true }} />
+  )
 }

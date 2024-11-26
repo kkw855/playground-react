@@ -12,6 +12,9 @@
     "module": "ESNext",
     "skipLibCheck": true,
 
+    // ?가 있는 타입에 undefined 값 할당은 타입 에러
+    "exactOptionalPropertyTypes": true,
+
     /* Bundler mode */
     "moduleResolution": "Bundler",
     // 확장자(*.ts, *.tsx) 없이 import 하기

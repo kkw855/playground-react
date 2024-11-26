@@ -8,7 +8,7 @@ import {
   isEqualCoord,
   isPieceType,
 } from '@/features/dnd/utils'
-import { cn } from '@/lib/cn'
+import { cn } from '@/utils/cn'
 
 import type { Coord, PieceRecord } from '../types'
 
