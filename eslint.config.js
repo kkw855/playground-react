@@ -70,6 +70,7 @@ export default tseslint.config(
       '@typescript-eslint/no-empty-function': ['off'],
       // import React from 'react' 필요 없음
       'react/react-in-jsx-scope': 'off',
+      'react/no-children-prop': ['error', { allowFunctions: true }],
       'react/prop-types': 'off',
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': [

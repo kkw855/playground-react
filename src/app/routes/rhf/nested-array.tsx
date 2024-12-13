@@ -6,7 +6,7 @@ import {
   useFormContext,
 } from 'react-hook-form'
 
-import { Button } from '@/components/ui/cn/button'
+import { Button } from '@/components/cn/button'
 
 type Child = {
   name: string

@@ -13,7 +13,12 @@
   },
   "dependencies": {
     "@atlaskit/pragmatic-drag-and-drop": "^1.4.0",
+    "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-slot": "^1.1.0",
+    "@tanstack/react-form": "^0.39.0",
+    "@tanstack/react-query": "^5.62.7",
+    "@tanstack/zod-form-adapter": "^0.37.1",
+    "axios": "^1.7.9",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "effect": "^3.10.15",
@@ -30,6 +35,7 @@
   "devDependencies": {
     "@eslint/compat": "^1.2.3",
     "@eslint/js": "^9.13.0",
+    "@tanstack/react-query-devtools": "^5.62.7",
     "@types/eslint-plugin-jsx-a11y": "^6.9.0",
     "@types/node": "^22.9.0",
     "@types/react": "^18.3.12",

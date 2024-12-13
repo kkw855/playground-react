@@ -12,6 +12,27 @@ const createAppRouter = () =>
         },
       },
       {
+        path: '/tanstack/form/image',
+        lazy: async () => {
+          const { ImageRoute } = await import('./routes/tanstack/form/image')
+          return { Component: ImageRoute }
+        },
+      },
+      {
+        path: '/form2',
+        lazy: async () => {
+          const { Basic2Route } = await import('./routes/tanstack/form/basic2')
+          return { Component: Basic2Route }
+        },
+      },
+      {
+        path: '/form',
+        lazy: async () => {
+          const { BasicRoute } = await import('./routes/tanstack/form/basic')
+          return { Component: BasicRoute }
+        },
+      },
+      {
         path: '/rhf',
         lazy: async () => {
           const { NestedArrayRoute } = await import('./routes/rhf/nested-array')
